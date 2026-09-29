@@ -1,0 +1,11 @@
+{
+  "symbol": "FEDFINA",
+  "company_name": "Fedbank Financial Services",
+  "valuation": {
+    "mcap_cr": 5584.0,
+    "pe": 14.7,
+    "pb": 1.9,
+    "roe_pct": 14.5
+  },
+  "html": "<h3 style='margin-top:0;'>Business Overview</h3><p class='prose'>Fedbank Financial Services (FedFina) is a retail-focused Non-Banking Financial Company (NBFC) promoted by Federal Bank. The company specializes in lending to the emerging self-employed sector (MSMEs) through Gold Loans, Loan Against Property (LAP), and affordable housing finance. Its core margin engine relies on securing low-cost liabilities via its banking parentage and lending at higher yields to underbanked demographics backed by hard collateral.</p><h3>Key Growth & Margin Drivers</h3><p class='prose'><ul><li><strong>Parentage Cost Advantage:</strong> Federal Bank's backing provides FedFina with a structurally lower cost of funds and higher credit rating compared to standalone mid-tier NBFC peers, preserving net interest margins.</li><li><strong>Branch Maturity Operating Leverage:</strong> The company has aggressively expanded its physical footprint. As new branches cross the 18-24 month maturity threshold, fixed cost absorption drives disproportionate profit growth.</li><li><strong>Mix Shift to High-Yield MSME:</strong> Strategic pivot away from purely gold loans toward higher-yield LAP and MSME unsecured lending to defend margins against intense gold loan competition.</li></ul></p><h3>The Core Tension / Risk</h3><p class='prose'>The primary structural tension is navigating Growth vs. Asset Quality. Moving down the credit curve to defend yields against larger incumbents (Muthoot, Manappuram) exposes the book to higher NPA volatility, particularly in the MSME segment during macroeconomic stress.</p><h3>Triggers to Watch</h3><p class='prose'>Key catalysts include impending policy rate cuts (which disproportionately benefit NBFCs reliant on wholesale funding) and any future corporate actions regarding the parent entity's stake reduction to meet regulatory norms.</p>"
+}
