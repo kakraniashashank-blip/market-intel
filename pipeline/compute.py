@@ -206,6 +206,18 @@ def generate_json_payload():
     frontend_dir = Path(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'frontend'))
     frontend_dir.mkdir(parents=True, exist_ok=True)
     
+    import math
+    def sanitize(obj):
+        if isinstance(obj, float):
+            return None if math.isnan(obj) or math.isinf(obj) else obj
+        elif isinstance(obj, dict):
+            return {k: sanitize(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [sanitize(x) for x in obj]
+        return obj
+
+    output = sanitize(output)
+    
     with open(frontend_dir / 'data.json', 'w') as f:
         json.dump(output, f)
         
