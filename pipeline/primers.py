@@ -20,7 +20,7 @@ else:
     genai.configure(api_key=api_key)
 
 # We use a standard available model
-model = genai.GenerativeModel('gemini-3.5-flash')
+model = genai.GenerativeModel('gemini-3.1-pro-preview')
 
 PROMPT_TEMPLATE = """
 You are a senior equity research analyst at an institutional bank.
@@ -99,7 +99,10 @@ def generate_primer(symbol):
             html_content = response.text.replace('```html', '').replace('```', '').strip()
         except Exception as e:
             print(f"Gemini API error for {symbol}: {e}")
-            html_content = f"<p class='prose'>Error generating synthesis: {e}</p>"
+            if '429' in str(e) or 'quota' in str(e).lower():
+                html_content = "<p class='prose'><em>Note: Automated LLM synthesis is temporarily paused due to API quota limits. Valuation metrics above are real-time.</em></p>"
+            else:
+                html_content = f"<p class='prose'><em>Synthesis currently unavailable ({str(e)[:50]}).</em></p>"
     else:
         html_content = "<p class='prose'>No fundamental text available to synthesize.</p>"
 
@@ -128,8 +131,14 @@ def build_primers(tickers):
             results[ticker] = data
             with open(output_dir / f"{ticker}.json", 'w') as f:
                 json.dump(data, f, indent=2)
-        print(f"Sleeping for 20 seconds to respect API rate limits...")
-        time.sleep(20) # rate limit safety
+            
+            if 'LLM synthesis is temporarily paused' in data['html']:
+                time.sleep(1)
+            else:
+                print(f"Sleeping for 20 seconds to respect API rate limits...")
+                time.sleep(20)
+        else:
+            time.sleep(1)
         
     return results
 

@@ -1,11 +1,11 @@
 {
-  "symbol": "RELIANCE",
-  "company_name": "RELIANCE INDUSTRIES LTD",
+  "symbol": "SBIN",
+  "company_name": "STATE BANK OF INDIA",
   "valuation": {
-    "mcap_cr": 1599538.2,
-    "pe": 21.41,
-    "pb": 1.77,
-    "roe_pct": null
+    "mcap_cr": 890477.7,
+    "pe": 10.32,
+    "pb": 1.43,
+    "roe_pct": 15.18
   },
   "html": "<p class='prose'><em>Note: Automated LLM synthesis is temporarily paused due to API quota limits. Valuation metrics above are real-time.</em></p>"
 }

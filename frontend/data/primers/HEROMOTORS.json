@@ -1,11 +1,11 @@
 {
-  "symbol": "RELIANCE",
-  "company_name": "RELIANCE INDUSTRIES LTD",
+  "symbol": "HEROMOTORS",
+  "company_name": "HERO MOTORS LIMITED",
   "valuation": {
-    "mcap_cr": 1599538.2,
-    "pe": 21.41,
-    "pb": 1.77,
-    "roe_pct": null
+    "mcap_cr": 6300.4,
+    "pe": 144.49,
+    "pb": null,
+    "roe_pct": 9.08
   },
   "html": "<p class='prose'><em>Note: Automated LLM synthesis is temporarily paused due to API quota limits. Valuation metrics above are real-time.</em></p>"
 }

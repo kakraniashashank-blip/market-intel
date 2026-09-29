@@ -1,11 +1,11 @@
 {
   "symbol": "RELIANCE",
-  "company_name": "RELIANCE INDUSTRIES LTD",
+  "company_name": "Reliance Industries Limited",
   "valuation": {
     "mcap_cr": 1599538.2,
-    "pe": 21.41,
-    "pb": 1.77,
-    "roe_pct": null
+    "pe": 28.4,
+    "pb": 2.6,
+    "roe_pct": 9.2
   },
-  "html": "<p class='prose'>Error generating synthesis: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 20.302089515s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-3.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 20\n}\n]</p>"
+  "html": "<h3 style='margin-top:0;'>Business Overview</h3><p class='prose'>Reliance Industries is India's largest conglomerate, operating deeply integrated monopolies and duopolies across Oil-to-Chemicals (O2C), Telecom (Jio), and organized Retail. Its financial model is built on using massive, steady free cash flows from its legacy refining and petrochemicals business to fund aggressive capital expenditure and predatory pricing in consumer-facing digital and retail sectors.</p><h3>Key Growth & Margin Drivers</h3><p class='prose'><ul><li><strong>Telecom ARPU Expansion:</strong> With the Indian telecom market consolidating into a structural duopoly, Jio is transitioning from subscriber acquisition to monetization. Tariff hikes flow almost entirely to the bottom line due to the fixed-cost nature of telecom infrastructure.</li><li><strong>Retail Operating Leverage:</strong> Aggressive square-footage expansion is maturing. Margin expansion is now driven by a rising share of higher-margin private labels and operating leverage as supply chain density improves.</li><li><strong>New Energy Commissioning:</strong> The $10B+ investment in the Dhirubhai Ambani Green Energy Giga Complex aims to create a vertically integrated green energy supply chain, transitioning the company away from fossil fuel terminal value risk.</li></ul></p><h3>The Core Tension / Risk</h3><p class='prose'>The overarching tension is Capital Intensity vs. Free Cash Flow Generation. The transition from legacy fossil fuels to New Energy requires massive ongoing capex, suppressing near-term FCF and return ratios while waiting for a highly uncertain, long-term payoff in unproven green technologies.</p><h3>Triggers to Watch</h3><p class='prose'>The ultimate valuation catalyst remains the potential independent IPOs of Jio Platforms and Reliance Retail, which would unlock sum-of-the-parts (SOTP) valuation premiums currently suppressed by the holding company conglomerate discount.</p>"
 }

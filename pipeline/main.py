@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from bhavcopy import backfill
 from compute import generate_json_payload
+from primers import build_primers
 
 def main():
     print("--- Market Intelligence Pipeline ---")
@@ -13,11 +14,15 @@ def main():
     
     # 2. Compute metrics and generate JSON payload for frontend
     print("\n[2/3] Computing analytics and generating data.json...")
-    generate_json_payload()
+    top_5_tickers = generate_json_payload()
     
     # 3. Primer generation (Phase 3 placeholder)
     print("\n[3/3] LLM Primer Generation...")
-    print("Skipping (To be implemented in Phase 3)")
+    if top_5_tickers:
+        print(f"Generating primers for top 5 tickers by turnover: {top_5_tickers}")
+        build_primers(top_5_tickers)
+    else:
+        print("No tickers returned, skipping primer generation.")
     
     print("\nPipeline Complete!")
 

@@ -1,11 +1,11 @@
 {
-  "symbol": "RELIANCE",
-  "company_name": "RELIANCE INDUSTRIES LTD",
+  "symbol": "WIPRO",
+  "company_name": "WIPRO LTD",
   "valuation": {
-    "mcap_cr": 1599538.2,
-    "pe": 21.41,
-    "pb": 1.77,
-    "roe_pct": null
+    "mcap_cr": 155117.7,
+    "pe": 12.45,
+    "pb": 2.0,
+    "roe_pct": 16.13
   },
   "html": "<p class='prose'><em>Note: Automated LLM synthesis is temporarily paused due to API quota limits. Valuation metrics above are real-time.</em></p>"
 }

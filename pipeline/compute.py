@@ -211,5 +211,8 @@ def generate_json_payload():
         
     print(f"Data saved to {frontend_dir / 'data.json'}")
 
+    top_5_tickers = df_latest.nlargest(5, 'TURNOVER_LACS')['SYMBOL'].tolist()
+    return top_5_tickers
+
 if __name__ == "__main__":
     generate_json_payload()
